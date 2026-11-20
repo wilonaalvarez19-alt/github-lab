@@ -1,0 +1,102 @@
+program 1 
+Pwd
+Mkdir campus-portal
+Cd campus-portal
+Git init
+Git config user.name " wilonaalvarez19-alt"
+Git config user.gmail  "wilonaalvarez19@gmail.com "
+Echo "# campus portal project "> README.md
+Git add README.md
+Git commit -m " project setup"
+Git status
+Git log -1
+
+program 2
+Git switch-c feature/login-page
+Touch login.html
+Notepad login.html
+Html code ctrl s tab x n close
+Git add login.html
+Notepad login.html
+<h1> login page </h1>
+<label for=username">Username:</lable>
+<input text : "text" placeholder : "username">.......
+Git add login.html
+Git commit-m "feat(auth) add login form input"
+Git branch 
+Git log --oneline --graph  --all
+
+
+program 3
+Git switch main
+Notepad config.json
+In that edit and add
+
+{
+   "Theme" : "light",
+    "Version" : "1.0.0"
+}
+Git add config.json
+Git commit-m " ADD configuration file"
+Git switch -c fix/dark-mode
+Notepad config.json
+In that edit and add
+
+{
+   "Theme" : "dark",
+    "Version" : "1.0.0"
+}
+Notepad config.json
+Git commit -m "theme changed to dark"
+Git switch main
+Notepad config.json
+In that edit and add
+
+{
+   "Theme" : "solarized",
+    "Version" : "1.0.0"
+}
+Git add config.json 
+Git commit -m " changed to solarized"
+Git merge fix/darl-mode
+Notepad config.json
+In this there shud unnecessary >>>>> ===== lines like this (remove)
+In that edit and add
+
+{
+   "Theme" : "solarized",
+    "Version" : "1.0.0"
+}
+Git commit -m "fix : resolve merge conflict "
+Git status 
+Cat config.json 
+Git log --online -- graph -- qll
+
+
+program 4
+Open github 
+Create repo
+Campus-portal (public)
+Turn off Readme
+Https code copy n paste in terminal gitbash
+Git remote add origin (paste)
+Git remote-v
+Git push-u origin feature/login-page
+Open github 
+Issues
+New issue
+In that title " Implement page validation"
+Create (back)
+Open pull request
+New pull request 
+Base:main  compare: main change to feature/login-page 
+In description type #1 issue number
+Comment  (any comments) 
+Click comment 
+Click merge
+git switch main
+git pull origin main
+git log --oneline --graph --all
+git status
+
+
